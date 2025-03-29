@@ -1,0 +1,11 @@
+CV as a PDF.
+
+GitHub Repositories:
+- Featured repositories should include:
+  - Repository name
+  - Description
+  - Technologies used
+  - Link to live demo (if applicable)
+  - Link to source code
+  - Key features or achievements
+  - Screenshot or preview image

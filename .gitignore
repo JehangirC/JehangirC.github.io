@@ -11,3 +11,5 @@ package.json
 *.gemspec
 .jekyll-cache
 vendor
+pegasus
+gemini_code_fixer

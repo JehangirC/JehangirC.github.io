@@ -1,0 +1,33 @@
+{
+  "repositories": [
+    {
+      "name": "Project Name",
+      "description": "A brief description of what this project does and its key features",
+      "technologies": ["JavaScript", "React", "Node.js"],
+      "liveDemo": "https://project-demo.com",
+      "sourceCode": "https://github.com/JehangirC/project-name",
+      "features": [
+        "Key feature 1",
+        "Key feature 2",
+        "Key feature 3"
+      ],
+      "image": "/images/project-screenshot.png",
+      "featured": true
+    },
+    {
+      "name": "Pegasus",
+      "description": "A powerful evaluation framework for Large Language Models using RAGAS and DeepEval metrics, with native support for Google Cloud's Vertex AI.",
+      "technologies": ["Python", "RAGAS", "DeepEval", "Google Cloud Vertex AI", "Pandas"],
+      "liveDemo": "",
+      "sourceCode": "https://github.com/JehangirC/pegasus",
+      "features": [
+        "Dual evaluation frameworks: RAGAS metrics for comprehensive RAG evaluation & DeepEval metrics for general LLM evaluation",
+        "Native Google Cloud Vertex AI integration",
+        "Configurable via JSON with support for all major evaluation metrics",
+        "Pandas DataFrame interface for easy data handling"
+      ],
+      "image": "/images/pegasus-screenshot.png",
+      "featured": true
+    }
+  ]
+}
