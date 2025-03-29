@@ -189,15 +189,20 @@ header {
 
 .skills-container {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Keep wrap for this method */
     justify-content: center;
-    gap: 30px;
+    gap: 30px; /* You might need to reduce this gap too */
+    /* gap: 20px; */
 }
 
 .skill-box {
-    flex: 1 1 200px;
-    max-width: 250px;
-    padding: 30px 20px;
+    /* --- CHANGE THIS --- */
+    flex: 1 1 150px; /* Example: Reduced basis from 200px */
+    /* --- AND/OR THIS --- */
+    max-width: 180px; /* Example: Reduced max-width from 250px */
+    /* ----------------- */
+
+    padding: 25px 15px; /* Maybe reduce padding slightly */
     text-align: center;
     background-color: white;
     border-radius: 10px;
@@ -366,5 +371,69 @@ footer {
     
     .contact-content {
         flex-direction: column;
+    }
+}
+
+.highlight {
+    font-weight: bold;
+    /* You can use your primary color or another distinct color */
+    color: var(--primary-color);
+    /* Optional: add a subtle background */
+    background-color: rgba(0, 119, 182, 0.1);
+    padding: 0 2px;
+}
+
+/* Styling for the Activities Section */
+#activities {
+    /* Optional: Add a slightly different background if desired */
+    /* background-color: #e9ecef;*/
+}
+
+.activity-list ul {
+    list-style: none; /* Ensure no default bullets */
+    padding-left: 0; /* Remove default padding */
+}
+
+.activity-list li {
+    margin-bottom: 15px; /* Space between activity items */
+    font-size: 1.05rem; /* Slightly larger font for readability */
+    display: flex; /* Align icon and text */
+    align-items: flex-start; /* Align items to the top */
+    gap: 10px; /* Space between icon and text */
+}
+
+.activity-list li i {
+    color: var(--primary-color); /* Use primary color for icons */
+    font-size: 1.2rem; /* Adjust icon size */
+    margin-top: 4px; /* Align icon slightly better with text */
+    flex-shrink: 0; /* Prevent icon from shrinking */
+    width: 20px; /* Give icon a fixed width */
+    text-align: center;
+}
+
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Optional: Hide text label for GitHub link on smaller screens */
+.nav-text-optional {
+    display: inline-block; /* Show by default */
+}
+
+@media (max-width: 768px) { /* Or your preferred breakpoint */
+    .nav-text-optional {
+        display: none; /* Hide on smaller screens */
+    }
+    #navbar ul li a i.fa-github { /* Ensure icon is still visible */
+        margin-right: 0; /* Remove right margin if text is hidden */
     }
 }
